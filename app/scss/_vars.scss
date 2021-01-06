@@ -1,2 +1,10 @@
-$mainColor: #7854f7;
-$mainFont: "Roboto", sans-serif;
+:root {
+    --main-color: #7854f7;
+
+    // Header logo colors
+    --bgc-woo: #9b5c8f;
+    --words-woo: #fff;
+    --txt-commerce: #000;
+}
+
+$main-font: "Roboto", sans-serif;

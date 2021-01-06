@@ -1,13 +1,20 @@
+// .burger
+//     span.burger__line
+//     span.burger__line
+//     span.burger__line
+//     span.burger__line
+//     span.burger__line
+
 .burger {
     position: relative;
     z-index: 10;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     border-radius: 50%;
     width: 40px;
     height: 40px;
-    background-color: #f5f6f7;
+    background-color: var(--bgc-woo);
     cursor: pointer;
 
     &__line {
@@ -17,7 +24,7 @@
         padding: 0;
         width: 18px;
         height: 2px;
-        background-color: #000;
+        background-color: #fff;
         transition: all 0.3s ease-in-out, transform 0.3s ease-in-out 0.3s;
 
         &:nth-child(1) {
@@ -77,5 +84,9 @@
                 background-color: transparent;
             }
         }
+    }
+
+    @include media(1100) {
+        display: flex;
     }
 }
