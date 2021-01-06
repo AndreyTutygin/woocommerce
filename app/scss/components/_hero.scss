@@ -14,9 +14,7 @@
         z-index: 2;
         margin-left: 165px;
         max-width: 818px;
-        font-size: 18px;
         line-height: 25px;
-        color: #94a2b3;
     }
 
     &__title {
@@ -113,11 +111,11 @@
     &__link {
         margin-left: 12px;
         border-bottom: 1px solid transparent;
-        color: #299ef3;
+        color: var(--link-color);
         transition: 0.2s;
 
         &:hover {
-            border-color: #299ef3;
+            border-color: var(--link-color);
         }
     }
 
@@ -142,7 +140,6 @@
     width: 267px;
     height: 72px;
     font-weight: 500;
-    font-size: 18px;
     line-height: 71px;
     text-align: center;
     color: #fff;
