@@ -14,6 +14,10 @@
         height: 31px;
 
         &-svg {
+            --bgc-woo: #9b5c8f;
+            --words-woo: #fff;
+            --txt-commerce: #000;
+
             width: 169px;
             height: 34px;
         }
@@ -24,11 +28,20 @@
     }
 
     &__search {
+        transition: 0.2s;
+
         &-svg {
-            --search-color: #272d4e;
+            --search-color: var(--title-color);
 
             width: 16px;
             height: 16px;
+            transition: 0.2s;
+        }
+
+        &:hover {
+            .header__search-svg {
+                --search-color: var(--main-color);
+            }
         }
     }
 
@@ -62,6 +75,11 @@
         font-weight: 500;
         line-height: 21px;
         color: var(--title-color);
+        transition: 0.4s;
+
+        &:hover {
+            color: var(--main-color);
+        }
     }
 }
 
@@ -77,10 +95,16 @@
     font-size: 18px;
     line-height: 21px;
     color: var(--title-color);
+    transition: 0.4s;
+
+    &:hover {
+        color: var(--main-color);
+    }
 }
 
 .start {
     display: block;
+    border: 2px solid transparent;
     border-radius: 5px;
     width: 120px;
     height: 47px;
@@ -89,4 +113,11 @@
     text-align: center;
     color: #fff;
     background-color: var(--main-color);
+    transition: 0.4s;
+
+    &:hover {
+        border-color: var(--main-color);
+        color: var(--main-color);
+        background-color: transparent;
+    }
 }

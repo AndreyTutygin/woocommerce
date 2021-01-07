@@ -87,6 +87,7 @@
 .card {
     position: relative;
     display: flex;
+    align-items: flex-start;
     flex-direction: column;
 
     &__img {
@@ -124,8 +125,14 @@
     &__link {
         display: inline-block;
         margin-top: 28px;
+        border-bottom: 1px solid transparent;
         font-weight: 700;
         color: var(--link-color);
+        transition: 0.2s;
+
+        &:hover {
+            border-color: var(--link-color);
+        }
     }
 
     @include media(1600) {
