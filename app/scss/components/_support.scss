@@ -1,0 +1,153 @@
+.support {
+    position: relative;
+    margin-top: 300px;
+
+    &__container {
+        position: relative;
+    }
+
+    &__section-head {
+        max-width: 660px;
+    }
+
+    &__img {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 147px;
+        bottom: 0;
+        z-index: -1;
+        margin: 0 auto;
+        width: 89%;
+        height: 416px;
+        background-image: url("../img/support__img.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        &_bg {
+            top: 225px;
+            z-index: -2;
+            background-image: url("../img/support__img_bg.png");
+        }
+    }
+
+    &__start {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 309px;
+        padding: 78px 30px;
+        background-color: #5f37ef;
+    }
+
+    &__parag {
+        max-width: 885px;
+        font-size: 36px;
+        line-height: 52px;
+        color: #fff;
+    }
+
+    &__btn {
+        display: inline-block;
+        border: 2px solid #fff;
+        border-radius: 60px;
+        width: 207px;
+        height: 72px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 68px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+        transition: 0.4s;
+        cursor: pointer;
+
+        &:hover {
+            color: #5f37ef;
+            background-color: #fff;
+        }
+    }
+
+    &__decore_ellipse {
+        position: absolute;
+        right: 130px;
+        bottom: -24px;
+        width: 89px;
+        height: 89px;
+        background: url("../img/support__decore_ellipse.png") center / cover no-repeat;
+    }
+
+    @include media(1335) {
+        &__parag {
+            max-width: 660px;
+            font-size: 26px;
+            line-height: 35px;
+        }
+
+        &__img {
+            top: 238px;
+            width: 100%;
+            height: 286px;
+
+            &_bg {
+                top: 300px;
+            }
+        }
+
+        &__btn {
+            width: 181px;
+            height: 60px;
+            line-height: 59px;
+        }
+    }
+
+    @include media(1000) {
+        &__img {
+            top: 136px;
+            width: 320px;
+            background-position: -437px;
+
+            &_bg {
+                top: 200px;
+                width: 100%;
+                background-position: center;
+            }
+        }
+
+        &__start {
+            flex-direction: column;
+            margin-top: 200px;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        &__parag {
+            font-size: 20px;
+            line-height: 29px;
+        }
+
+        &__btn {
+            margin-top: 30px;
+            width: 140px;
+            height: 40px;
+            font-size: 14px;
+            line-height: 40px;
+        }
+
+        &__decore_ellipse {
+            display: none;
+        }
+    }
+
+    @include media(383) {
+        &__img {
+            top: 170px;
+
+            &_bg {
+                top: 232px;
+            }
+        }
+    }
+}
