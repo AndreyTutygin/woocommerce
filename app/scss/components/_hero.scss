@@ -159,3 +159,17 @@
         line-height: 36px;
     }
 }
+
+.btn_green {
+    background-color: #70c217;
+
+    &:hover {
+        border-color: #70c217;
+        color: #70c217;
+    }
+
+    @include media(550) {
+        height: 50px;
+        line-height: 22px;
+    }
+}
