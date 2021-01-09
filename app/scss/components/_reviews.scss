@@ -1,0 +1,186 @@
+.reviews {
+    margin-top: 103px;
+    padding: 138px 0 124px;
+    background: linear-gradient(180deg, rgba(236, 240, 253, 0) 0%, rgba(236, 240, 253, 0.53) 14.32%, #ecf0fd 45.83%, rgba(236, 240, 253, 0.43) 84.33%, rgba(236, 240, 253, 0) 100%);
+
+    &__container {
+        position: relative;
+    }
+
+    &__section-head {
+        max-width: 520px;
+    }
+
+    &__slide {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        border-radius: 20px;
+        padding: 106px 0 87px;
+        max-width: 730px;
+        box-shadow: 0 18px 52.8537px rgba(215, 228, 249, 0.5);
+        text-align: center;
+        background-color: #fff;
+
+        &-wrap {
+            margin-top: 101px;
+            width: 100%;
+        }
+    }
+
+    &__quotes {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 20px;
+        bottom: 0;
+        margin: 0 auto;
+        width: 234px;
+        height: 168px;
+        background-image: url("./../img/slide__quotes.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &__parag {
+        z-index: 1;
+        max-width: 566px;
+        font-size: 26px;
+        line-height: 39px;
+    }
+
+    &__decore {
+        position: absolute;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        &_ava {
+            &_1 {
+                left: 78px;
+                top: 83px;
+                width: 425px;
+                height: 662px;
+                background-image: url("./../img/reviews__decore_ava_1.png");
+            }
+
+            &_2 {
+                right: 208px;
+                top: 60px;
+                width: 309px;
+                height: 729px;
+                background-image: url("./../img/reviews__decore_ava_2.png");
+            }
+        }
+
+        &_dots {
+            &_1 {
+                left: 448px;
+                bottom: -129px;
+                width: 472px;
+                height: 213px;
+                background-image: url("./../img/reviews__decore_dots_1.png");
+            }
+
+            &_2 {
+                right: 441px;
+                top: 266px;
+                width: 472px;
+                height: 213px;
+                background-image: url("./../img/reviews__decore_dots_2.png");
+            }
+        }
+    }
+
+    @include media(800) {
+        margin-top: 0;
+        padding: 8px 0 124px;
+
+        &__slide {
+            padding: 50px 20px;
+
+            &-wrap {
+                margin-top: 50px;
+            }
+        }
+
+        &__parag {
+            max-width: 100%;
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        &__decore {
+            display: none;
+        }
+    }
+}
+
+.slider-container {
+    position: relative;
+}
+
+.slider-buttons {
+    position: absolute;
+    right: 38%;
+    bottom: -88px;
+    z-index: 2;
+
+    @include media(1400) {
+        bottom: 46px;
+    }
+
+    @include media(800) {
+        bottom: 30px;
+    }
+}
+
+.swiper-button-disabled {
+    opacity: 0.5;
+
+    .arrow-btn__svg {
+        width: 30px;
+
+        @include media(800) {
+            width: 15px;
+        }
+    }
+}
+
+.arrow-btn {
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    &__prev {
+        right: 17px;
+        bottom: -27px;
+        transform: rotate(180deg);
+    }
+
+    &__svg {
+        width: 51px;
+        height: 25px;
+        transition: 0.2s;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    @include media(800) {
+        &__prev {
+            right: 8px;
+            bottom: -17px;
+        }
+
+        &__svg {
+            width: 20px;
+            height: 10px;
+        }
+    }
+}
