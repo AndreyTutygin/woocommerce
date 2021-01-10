@@ -46,6 +46,12 @@
         }
     }
 
+    @include media(550) {
+        &__cards {
+            margin-top: 25px;
+        }
+    }
+
     @include media(429) {
         &__card {
             &:nth-child(2) {
@@ -204,6 +210,10 @@
         &__parag {
             margin-top: 12px;
             line-height: 23px;
+        }
+
+        &__link {
+            margin: 15px auto 0;
         }
     }
 }
